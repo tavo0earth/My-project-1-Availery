@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#text {
+    text-decoration: underline;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-around;
+}
