@@ -1,13 +1,29 @@
 .header {
     display: flex;
     justify-content: space-between;
+    height: 200px;
 }
 
 #text {
     text-decoration: underline;
 }
 
-h1 {
+.name h1 {
     display: flex;
     justify-content: space-around;
+}
+
+.menu_site {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.tupe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options p {
+    float: right;
+
 }
