@@ -16,6 +16,7 @@
 .menu_site {
     margin: 0 auto;
     width: 500px;
+    height: 400px;
 }
 
 .tupe {
@@ -26,4 +27,33 @@
 .options p {
     float: right;
 
+}
+
+.people h3 {
+    text-align: center;
+}
+
+.face {
+    display: flex;
+    margin: 0 auto;
+    width: 700px;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.projects h3 {
+    text-align: center;
+}
+
+.dell {
+    display: flex;
+    margin: 0 auto;
+    width: 700px;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.movie {
+    display: flex;
+    justify-content: center;
 }
