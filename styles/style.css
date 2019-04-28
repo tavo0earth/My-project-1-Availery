@@ -1,11 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    height: 200px;
-}
-
-#text {
-    text-decoration: underline;
+    margin-bottom: 100px;
 }
 
 .name h1 {
@@ -16,7 +12,7 @@
 .menu_site {
     margin: 0 auto;
     width: 500px;
-    height: 400px;
+    margin-bottom: 100px;
 }
 
 .tupe {
@@ -37,7 +33,7 @@
     display: flex;
     margin: 0 auto;
     width: 700px;
-    height: 300px;
+    margin-bottom: 100px;
     justify-content: space-between;
 }
 
@@ -49,11 +45,76 @@
     display: flex;
     margin: 0 auto;
     width: 700px;
-    height: 300px;
+    margin-bottom: 100px;
     justify-content: space-between;
 }
 
 .movie {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
+}
+
+.about {
+    margin: 0 auto;
+    width: 640px;
+    text-align: center;
+}
+
+.for {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+
+.tree1 {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tree2 {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+.faq {
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.faq1 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+
+.contacts {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
 }
