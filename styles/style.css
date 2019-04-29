@@ -1,9 +1,3 @@
-.header {
-    height: 1000px;
-    background-image: url("/home/tavo/My-project-1-Availery/src/images/1.png");
-    background-size: cover;
-}
-
 .cap {
     display: flex;
     justify-content: space-between;
