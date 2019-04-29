@@ -4,163 +4,226 @@
     <meta charset="UTF-8">
     <title>Availery</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
-<body>
+<body style="width: 1920px; height: 6144px">
 <div class="header">
-    <div class="name">
-            <h1>AVAILERY</h1>
-        <span style="text-decoration: underline">The Smart Way to Find and be Found</span>
+    <div class="cap">
+        <div class="logo">
+            <img src="src/images/Logo.png">
+        </div>
+        <div class="menu">
+            <div><a href="#">PROJECTS</a></div>
+            <div><a href="#">PEOPLE</a></div>
+            <div><a href="#">HOW IT WORKS</a></div>
+        </div>
+        <div class="login">
+            <a href="#"><img src="src/images/login.png"></a>
+        </div>
+        <div class="soc">
+            <a href="#"><img src="src/images/fa-facebook-square.png"></a>
+            <a href="#"><img src="src/images/fa-linkedin.png"></a>
+            <a href="#"><img src="src/images/fa-twitter_.png"></a>
+            <a href="#"><img src="src/images/fa-google-plus.png"></a>
+        </div>
     </div>
-    <div class="menu">
-            <a href="#">PROJECTS</a>
-            <a href="#">PEOPLE</a>
-            <a href="#">HOW IT WORKS</a>
-    </div>
-    <div class="login">
-        <a href="#">LOGIN</a>
-    </div>
-    <div class="socnetwork">
-        <a href="#">F</a>
-        <a href="#">IN</a>
-        <a href="#">T</a>
-        <a href="#">G+</a>
-    </div>
-</div>
-<div class="menu_site">
-    <h1>I'm looking for</h1>
-    <div class="tupe">
-        <select name="sap">
-            <option selected value="0">SAP</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-        </select>
-        <select name="module">
-            <option selected value="0">MODULE</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-        </select>
-        <select name="tupe">
-            <option selected value="0">TUPE</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-        </select>
-            <button type="submit">TO START</button>
-    </div>
-    <div class="options">
-        <h5>More options</h5>
-            <select name="availability" style="width: 500px">
-                <option selected value="0">Availability</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </select><br>
-            <select name="my skills" style="width: 500px">
-                <option selected value="0">My skills</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </select><br>
-            <select name="qualifications" style="width: 500px">
-                <option selected value="0">Qualifications</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </select><br>
-            <select name="experience" style="width: 500px">
-                <option selected value="0">Experience</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </select>
-        <p>
-        <button type="submit">Find</button>
-        </p>
+    <div class="menu_site">
+        <p>I'm looking for</p>
+        <div class="smtt">
+            <div class="sap">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 166px; height: 40px">
+                    <span>SAP</span>
+                </button>
+                <div class="sap-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="sap-item" href="#">1</a>
+                    <a class="sap-item" href="#">2</a>
+                </div>
+            </div>
+            <div class="module">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 252px; height: 40px">
+                    <span>MODULE</span>
+                </button>
+                <div class="module-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="module-item" href="#">1</a>
+                    <a class="module-item" href="#">2</a>
+                </div>
+            </div>
+            <div class="tupe">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 148px; height: 40px">
+                    <span>TUPE</span>
+                </button>
+                <div class="tupe-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="tupe-item" href="#">1</a>
+                    <a class="tupe-item" href="#">2</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary" style="width: 148px; height: 40px"><span>TO START</span></button>
+        </div>
+        <div class="options">
+            <h5>More options</h5>
+            <div class="amqe">
+                <div class="a">
+                    <button button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="width: 767px; height: 56px">
+                        <span>Anability</span>
+                    </button>
+                </div>
+                <div class="s">
+                    <button button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="width: 767px; height: 56px">
+                        <span>My skills</span>
+                    </button>
+                </div>
+                <div class="q">
+                    <button button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="width: 767px; height: 56px">
+                        <span>Qualifications</span>
+                    </button>
+                </div>
+                <div class="e">
+                    <button button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="width: 767px; height: 56px">
+                        <span>Experience</span>
+                    </button>
+                </div>
+                <a href="#"><img src="src/images/2-layers.png"></a>
+            </div>
+        </div>
     </div>
 </div>
 <div class="people">
-    <h3>The digital, cloud-based plaform for professional ERP</h3>
+    <p>The digital, cloud-based plaform for professional ERP</p>
     <div class="face">
         <div class="f1">
-            <h4>Chris Cornell</h4>
-            Sydney<br>
-            SAP Mana Consultant<br>
-            12+years SAP experience<br>
-            Skills in Basis<br>
-            Industry experience in...<br>
-            Industry experience in...<br>
-            Industry experience in...<br>
-            Industry experience in...<br>
+            <div>
+                <img src="src/images/Layer_2.png">
+            </div>
+            <div>
+                <span class="n">Chris Cornell</span><br>
+                <span class="n1">Sydney</span><br>
+                <span class="n2">SAP Mana Consultant<br>
+                12+years SAP experience<br>
+                Skills in Basis<br>
+                Industry experience in...<br>
+                Industry experience in...<br>
+                Industry experience in...<br>
+                    Industry experience in...
+                </span>
+            </div>
         </div>
         <div class="f1">
-            <h4>Chris Cornell</h4>
-            Sydney<br>
-            SAP Mana Consultant<br>
-            12+years SAP experience<br>
-            Skills in Basis<br>
-            Industry experience in...<br>
-            Industry experience in...<br>
-            Industry experience in...<br>
-            Industry experience in...<br>
+            <div>
+                <img src="src/images/Layer_2.png">
+            </div>
+            <div>
+                <span class="n">Chris Cornell</span><br>
+                <span class="n1">Sydney</span><br>
+                <span class="n2">SAP Mana Consultant<br>
+                12+years SAP experience<br>
+                Skills in Basis<br>
+                Industry experience in...<br>
+                Industry experience in...<br>
+                Industry experience in...<br>
+                    Industry experience in...
+                </span>
+            </div>
         </div>
         <div class="f1">
-            <h4>Chris Cornell</h4>
-            Sydney<br>
-            SAP Mana Consultant<br>
-            12+years SAP experience<br>
-            Skills in Basis<br>
-            Industry experience in...<br>
-            Industry experience in...<br>
-            Industry experience in...<br>
-            Industry experience in...<br>
+            <div>
+                <img src="src/images/Layer_2.png">
+            </div>
+            <div>
+                <span class="n">Chris Cornell</span><br>
+                <span class="n1">Sydney</span><br>
+                <span class="n2">SAP Mana Consultant<br>
+                12+years SAP experience<br>
+                Skills in Basis<br>
+                Industry experience in...<br>
+                Industry experience in...<br>
+                Industry experience in...<br>
+                    Industry experience in...
+                </span>
+            </div>
         </div>
     </div>
 </div>
 <div class="projects">
-    <h3>For direct engagement with innovative ERP projects</h3>
+    <p>For direct engagement with innovative ERP projects</p>
     <div class="dell">
-        <div class="d1">
-            <h4>FRONT END DESIGNER</h4>
-            <h5>Dell Inc. Jakarta</h5>
-            Start Date: Jun, 10 2016<br>
+        <div class="dell_text">
+            <div>
+                <img src="src/images/Dell_logo_2016.svg.png">
+            </div>
+            <div>
+                <span class="d">FRONT END DESIGNER</span><br>
+                <span class="d1">Dell Inc. Jakarta</span><br>
+                <span class="d2">Start Date: Jun, 10 2016<br>
             Duration: 3 Month<br>
-            Scope: Design Website<br>
+            Scope: Design Website</span>
+            </div>
         </div>
-        <div class="d1">
-            <h4>FRONT END DESIGNER</h4>
-            <h5>Dell Inc. Jakarta</h5>
-            Start Date: Jun, 10 2016<br>
+        <div class="dell_text">
+            <div>
+                <img src="src/images/Dell_logo_2016.svg.png">
+            </div>
+            <div>
+                <span class="d">FRONT END DESIGNER</span><br>
+                <span class="d1">Dell Inc. Jakarta</span><br>
+                <span class="d2">Start Date: Jun, 10 2016<br>
             Duration: 3 Month<br>
-            Scope: Design Website<br>
+            Scope: Design Website</span>
+            </div>
         </div>
-        <div class="d1">
-            <h4>FRONT END DESIGNER</h4>
-            <h5>Dell Inc. Jakarta</h5>
-            Start Date: Jun, 10 2016<br>
+        <div class="dell_text">
+            <div>
+                <img src="src/images/Dell_logo_2016.svg.png">
+            </div>
+            <div>
+                <span class="d">FRONT END DESIGNER</span><br>
+                <span class="d1">Dell Inc. Jakarta</span><br>
+                <span class="d2">Start Date: Jun, 10 2016<br>
             Duration: 3 Month<br>
-            Scope: Design Website<br>
+            Scope: Design Website</span>
+            </div>
         </div>
     </div>
 </div>
-<div class="movie">
-    <video width="805" height="453" controls="controls">
+<div class="movie" style="background: url('src/images/Capa_1.png')">
+    <video width="1030" height="644" controls="controls">
            <source src="src/video/Availery - For People.mp4" type="video/mp4">
     </video>
 </div>
 <div class="about">
-    <h1>About Us</h1>
-    <p><h3>Availery is digital disruption for SAP resourcing.</h3></p>
-    <h6>We've reimagined recruitment as enablement: diving the power od data, visibility and connection
+    <span class="aboutus">About Us</span><br>
+    <span class="aboutus1">Availery is digital disruption for SAP resourcing.</span><br>
+    <span class="aboutus2">We've reimagined recruitment as enablement: diving the power od data, visibility and connection
     back to the people and your projects. This makes for authentic opportunities and true direct
     engagement. No middleman, no margins, no placement fees. None. Zip. Zilch.<br>
     But we're even more than that: we're also green disruption. We're using the engine of activity in
     this busy ERP industry of oursto grow more than just business and careers...<br>
     In partnership with the Foundation for National Parks and Wildlife. Availery links the growth of
-    your career and business to the growth of natural habitat, planting a tree on your behalf for:</h6>
+    your career and business to the growth of natural habitat, planting a tree on your behalf for:</span>
 </div>
 <div class="for">
-    <div>Every paid project subscription</div>
-    <div>Every paid people subscription</div>
-    <div>Every project engaged through the platform</div>
+    <div>
+        <div class="img"><img src="src/images/3-layers.png"></div>
+        <div class="img_text">Every paid project subscription</div>
+    </div>
+    <div>
+        <div class="img"><img src="src/images/3-layers.png"></div>
+        <div class="img_text">Every paid people subscription</div>
+    </div>
+    <div>
+        <div class="img"><img src="src/images/3-layers.png"></div>
+        <div class="img_text">Every project engaged through the platform</div>
+    </div>
 </div>
 <div class="tree1">
-    We use a "tree" icon instead of star rating for each employer and person to reflect the number
-    of trees planted on their behalf. For example:
+    <span class="tree_text">We use a "tree" icon instead of star rating for each employer and person to reflect the number
+        of trees planted on their behalf. For example: </span>
 </div>
 <div class="tree2">
     <div>1 Get your first tree planted simply for signing up with either a 'People' or 'Project'
