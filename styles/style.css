@@ -1,3 +1,13 @@
+body {
+    width: 1920px;
+    height: 6144px;
+}
+
+.header {
+    background: url("../src/images/1.png");
+    height: 1100px;
+}
+
 .cap {
     display: flex;
     justify-content: space-between;
@@ -9,12 +19,25 @@
     margin-left: 370px;
 }
 
-.logo, .menu, .soc {
+.logo, .menu, .socialLinks {
     margin-top: 40px;
 }
 
 .login {
     margin-top: 30px;
+    width: 85px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #818181;
+}
+
+.text_login {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fefefe;
+    padding: 11px 15px;
 }
 
 .menu {
@@ -22,7 +45,7 @@
     justify-content: space-between;
     width: 350px;
     height: 12px;
-    color: #010101;
+    color: black;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
@@ -35,20 +58,17 @@
     margin-top: 280px;
 }
 
-.smtt {
+.menu_site1 {
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
 }
 
-.smtt span {
-    width: 30px;
-    height: 11px;
+.menu_site1 span {
     color: #007ab4;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
     text-transform: uppercase;
 }
 
@@ -72,25 +92,22 @@
     margin-top: 2px;
 }
 
-.amqe {
+.menu_options {
     margin-top: 30px;
 }
 
-.a, .s, .q, .e {
+.dropup {
     margin-top: 6px;
 }
 
-.amqe span {
-    width: 82px;
-    height: 14px;
+.menu_options span {
     color: #ffffff;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
 }
 
-.amqe img {
+.menu_options img {
     margin-top: 19px;
     float: right;
 }
@@ -114,13 +131,13 @@
     justify-content: space-between;
 }
 
-.f1 {
+.face1 {
     display: flex;
     justify-content: space-between;
     width: 300px;
 }
 
-.n {
+.face1 .name {
     width: 104px;
     height: 41px;
     color: #303030;
@@ -132,13 +149,13 @@
     font-weight: 700;
 }
 
-.n1 {
+.face1 .name1 {
     color: #666666;
     font-family: "Lato - Regular";
     font-weight: 400;
 }
 
-.n2 {
+.face1 .name2 {
     width: 156px;
     height: 113px;
     color: #666666;
@@ -208,6 +225,7 @@
     margin-top: 143px;
     width: 1920px;
     height: 999px;
+    background: url('../src/images/Capa_1.png');
 }
 
 .about {
@@ -217,7 +235,7 @@
     margin-top: 91px;
 }
 
-.aboutus {
+.aboutUs {
     width: 125px;
     height: 23px;
     color: #303030;
@@ -226,7 +244,7 @@
     font-weight: 700;
 }
 
-.aboutus1 {
+.aboutUs1 {
     margin-top: 31px;
     width: 445px;
     height: 20px;
@@ -236,7 +254,7 @@
     font-weight: 700;
 }
 
-.aboutus2 {
+.aboutUs2 {
     margin-top: 30px;
     width: 965px;
     height: 135px;
@@ -275,6 +293,7 @@
     height: 613px;
     margin: 0 auto;
     margin-top: 82px;
+    background: url('../src/images/Layer_600.png');
 }
 
 .tree1 {
@@ -283,6 +302,7 @@
     text-align: center;
     padding-top: 79px;
     margin-bottom: 17px;
+    background: url('../src/images/Layer_600.png');
 }
 
 .tree_text {
@@ -332,6 +352,7 @@
     text-align: center;
     width: 1920px;
     padding-top: 80px;
+    background: url('../src/images/Layer_3.png');
 }
 
 .text_faq {
