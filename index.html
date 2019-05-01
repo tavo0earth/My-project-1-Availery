@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <title>Availery</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<a name="top"></a>
+<a href="#" name="top"></a>
 <div class="header">
     <div class="cap">
         <div class="logo">
             <img src="src/images/Logo.png">
         </div>
         <div class="menu">
-            <div><a href="#">PROJECTS</a></div>
-            <div><a href="#">PEOPLE</a></div>
-            <div><a href="#">HOW IT WORKS</a></div>
+            <a href="#">PROJECTS</a>
+            <a href="#">PEOPLE</a>
+            <a href="#">HOW IT WORKS</a>
         </div>
         <div class="login">
             <a href="#"><div class="text_login">LOGIN</div></a>
@@ -32,62 +32,62 @@
         <p>I'm looking for</p>
         <div class="menu_site1">
             <div class="sap">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 166px; height: 40px">
-                    <span>SAP</span>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="sapdropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SAP
                 </button>
-                <div class="sap-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="sap-item" href="#">1</a>
-                    <a class="sap-item" href="#">2</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" href="#">2</a>
                 </div>
             </div>
             <div class="module">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 252px; height: 40px">
-                    <span>MODULE</span>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="moduledropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MODULE
                 </button>
-                <div class="module-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="module-item" href="#">1</a>
-                    <a class="module-item" href="#">2</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" href="#">2</a>
                 </div>
             </div>
             <div class="tupe">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 148px; height: 40px">
-                    <span>TUPE</span>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="tupedropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    TUPE
                 </button>
-                <div class="tupe-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="tupe-item" href="#">1</a>
-                    <a class="tupe-item" href="#">2</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">1</a>
+                    <a class="dropdown-item" href="#">2</a>
                 </div>
             </div>
-            <button type="button" class="btn btn-secondary" style="width: 148px; height: 40px"><span>TO START</span></button>
+            <button type="button" class="btn btn-secondary" id="startButton">TO START</button>
         </div>
         <div class="options">
             <h5>More options</h5>
             <div class="menu_options">
                 <div class="dropup">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false" style="width: 767px; height: 56px">
-                        <span>Anability</span>
+                            aria-haspopup="true" aria-expanded="false" id="anability">
+                        Anability
                     </button>
                 </div>
                 <div class="dropup">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false" style="width: 767px; height: 56px">
-                        <span>My skills</span>
+                            aria-haspopup="true" aria-expanded="false" id="mySkill">
+                        My skills
                     </button>
                 </div>
                 <div class="dropup">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false" style="width: 767px; height: 56px">
-                        <span>Qualifications</span>
+                            aria-haspopup="true" aria-expanded="false" id="qualifications">
+                        Qualifications
                     </button>
                 </div>
                 <div class="dropup">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false" style="width: 767px; height: 56px">
-                        <span>Experience</span>
+                            aria-haspopup="true" aria-expanded="false" id="experience">
+                        Experience
                     </button>
                 </div>
                 <a href="#"><img src="src/images/2-layers.png"></a>
@@ -197,6 +197,7 @@
            <source src="src/video/Availery - For People.mp4" type="video/mp4">
     </video>
 </div>
+<div class="aboutWidht">
 <div class="about">
     <span class="aboutUs">About Us</span><br>
     <span class="aboutUs1">Availery is digital disruption for SAP resourcing.</span><br>
@@ -221,6 +222,7 @@
         <div class="img"><img src="src/images/3-layers2.png"></div>
         <div class="img_text">Every project engaged through the platform</div>
     </div>
+</div>
 </div>
 <div class="tree_img">
 <div class="tree1">
@@ -287,14 +289,14 @@
             </div>
             <div class="text_faq_rigth">
                 <div class="faq_icon">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 570px">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="onetextbutton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                     </button>
                 </div>
                 <div class="faq_icon">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 570px">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="twotextbutton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -303,8 +305,8 @@
                     </div>
                 </div>
                 <div class="faq_icon">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 570px">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="treetextbutton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -351,27 +353,26 @@
             <div class="name">
                 <div class="form-group">
                     <div class="col-10">
-                        <input class="form-control" type="text" placeholder="First Name*" id="example-text-input">
+                        <input class="form-control" type="text" placeholder="First Name*">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-10">
-                        <input class="form-control" type="text" placeholder="Last Name*" id="example-text-input">
+                        <input class="form-control" type="text" placeholder="Last Name*">
                     </div>
                 </div>
             </div>
             <div class="other">
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                           placeholder="Email*">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email*">
                 </div>
                 <div class="form-group row">
                     <div class="col-10">
-                        <input class="form-control" type="text" placeholder="Subject" id="example-text-input">
+                        <input class="form-control" type="text" placeholder="Subject">
                     </div>
                 </div>
                 <div class="form-group1">
-                    <textarea class="form-control" placeholder="Message" id="exampleTextarea" rows="3"></textarea>
+                    <textarea class="form-control" placeholder="Message" rows="3"></textarea>
                 </div>
             </div>
             <div>
@@ -442,5 +443,14 @@
     </div>
     <div class="footer1">©  2016 Availery</div>
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

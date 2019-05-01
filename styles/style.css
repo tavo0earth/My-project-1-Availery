@@ -1,11 +1,11 @@
-body {
-    width: 1920px;
-    height: 6144px;
+@media (max-width: 1284px) {
+
 }
 
 .header {
-    background: url("../src/images/1.png");
+    background: url("../src/images/1 (1).png");
     height: 1100px;
+    width: 1920px;
 }
 
 .cap {
@@ -37,7 +37,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #fefefe;
-    padding: 11px 15px;
+    padding: 9px 15px;
 }
 
 .menu {
@@ -45,11 +45,14 @@ body {
     justify-content: space-between;
     width: 350px;
     height: 12px;
-    color: black;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.menu a {
+    color: black;
 }
 
 .menu_site {
@@ -70,6 +73,28 @@ body {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+#sapdropdownMenuButton, #moduledropdownMenuButton, #tupedropdownMenuButton, #startButton {
+    height: 40px;
+    color: #007ab4;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#sapdropdownMenuButton {
+    width: 166px
+}
+
+
+#moduledropdownMenuButton {
+    width: 252px
+}
+
+#tupedropdownMenuButton, #startButton {
+    width: 148px
 }
 
 .menu_site p {
@@ -100,16 +125,29 @@ body {
     margin-top: 6px;
 }
 
-.menu_options span {
+.dropup span {
     color: #ffffff;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
 }
 
+#anability, #mySkill, #qualifications, #experience {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    width: 767px;
+    height: 56px;
+}
+
 .menu_options img {
     margin-top: 19px;
     float: right;
+}
+
+.people {
+    width: 1920px;
 }
 
 .people p {
@@ -162,6 +200,10 @@ body {
     font-family: Lato;
     font-size: 14px;
     font-weight: 400;
+}
+
+.projects {
+    width: 1920px;
 }
 
 .projects p {
@@ -235,6 +277,10 @@ body {
     margin-top: 91px;
 }
 
+.aboutWidht {
+    width: 1920px;
+}
+
 .aboutUs {
     width: 125px;
     height: 23px;
@@ -289,7 +335,7 @@ body {
 }
 
 .tree_img {
-    width: 1443px;
+    width: 1920px;
     height: 613px;
     margin: 0 auto;
     margin-top: 82px;
@@ -298,6 +344,7 @@ body {
 
 .tree1 {
     margin: 0 auto;
+    width: 1920px;
     width: 800px;
     text-align: center;
     padding-top: 79px;
@@ -402,14 +449,15 @@ body {
     margin-bottom: 15px;
 }
 
-.faq_icon span {
-    width: 389px;
-    height: 15px;
-    color: black;
+#onetextbutton, #twotextbutton, #treetextbutton {
+    color: #ffffff;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
+    width: 570px
 }
+
+
 
 .contacts {
     display: flex;
@@ -519,7 +567,7 @@ body {
 .footer {
     margin: 0 auto;
     width: 1920px;
-    background: url("../src/images/footer.png");
+    background: url("../src/images/footer (1).png");
     height: 580px;
 }
 
@@ -550,12 +598,16 @@ body {
 }
 
 .footer_text3 {
-    color: #ffffff;
     font-family: Lato;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     margin-top: 30px;
+    color: #ffffff;
+}
+
+.footer_text3 a {
+    color: #ffffff;
 }
 
 .footer_text5 {
