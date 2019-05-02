@@ -459,6 +459,7 @@
     justify-content: flex-end;
     width: 100%;
     margin-top: 75px;
+    padding: 0 50px 0 50px;
 }
 
 .message .text1 {
@@ -530,20 +531,23 @@
     margin-top: 30px;
 }
 
+.contacts .message {
+    width: 40%
+}
+
 .map {
     background: url('../src/images/map.png');
     height: 692px;
     background-repeat: no-repeat;
     margin-top: 50px;
     margin-left: 32px;
+    width: 40%;
 }
 
 .chat {
-    background: url('../src/images/chat.png');
-    width: 270px;
-    height: 387px;
+    background: url('../src/images/chat.png') no-repeat;
+    width: 311px;
     margin-top: 269px;
-    margin-right: 76px;
     margin-left: 27px;
 }
 
