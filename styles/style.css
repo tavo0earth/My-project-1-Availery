@@ -1,22 +1,15 @@
-@media (max-width: 1284px) {
-
-}
-
 .header {
     background: url("../src/images/1 (1).png");
     height: 1100px;
-    width: 1920px;
+    width: 100%;
 }
 
 .cap {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 1800px;
-}
-
-.logo {
-    margin-left: 370px;
+    width: 100%;
+    padding: 0 50px 0 50px;
 }
 
 .logo, .menu, .socialLinks {
@@ -147,7 +140,8 @@
 }
 
 .people {
-    width: 1920px;
+    width: 100%;
+    padding: 0 50px 0 50px;
 }
 
 .people p {
@@ -164,7 +158,7 @@
 .face {
     display: flex;
     margin: 0 auto;
-    width: 1050px;
+    width: 100%;
     margin-top: 87px;
     justify-content: space-between;
 }
@@ -203,7 +197,8 @@
 }
 
 .projects {
-    width: 1920px;
+    width: 100%;
+    padding: 0 50px 0 50px;
 }
 
 .projects p {
@@ -220,7 +215,7 @@
 .dell {
     display: flex;
     margin: 0 auto;
-    width: 1050px;
+    width: 100%;
     margin-top: 100px;
     justify-content: space-between;
 }
@@ -265,20 +260,21 @@
     justify-content: center;
     align-items: center;
     margin-top: 143px;
-    width: 1920px;
+    width: 100%;
     height: 999px;
     background: url('../src/images/Capa_1.png');
 }
 
 .about {
     margin: 0 auto;
-    width: 965px;
+    width: 100%;
     text-align: center;
     margin-top: 91px;
+    padding: 0 50px 0 50px;
 }
 
 .aboutWidht {
-    width: 1920px;
+    width: 100%;
 }
 
 .aboutUs {
@@ -302,7 +298,7 @@
 
 .aboutUs2 {
     margin-top: 30px;
-    width: 965px;
+    width: 100%;
     height: 135px;
     color: #303030;
     font-family: Lato;
@@ -315,8 +311,9 @@
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    width: 1030px;
+    width: 100%;
     margin-top: 46px;
+    padding: 0 50px 0 50px;
 }
 
 .img {
@@ -335,7 +332,7 @@
 }
 
 .tree_img {
-    width: 1920px;
+    width: 100%;
     height: 613px;
     margin: 0 auto;
     margin-top: 82px;
@@ -344,8 +341,7 @@
 
 .tree1 {
     margin: 0 auto;
-    width: 1920px;
-    width: 800px;
+    width: 100%;
     text-align: center;
     padding-top: 79px;
     margin-bottom: 17px;
@@ -353,7 +349,7 @@
 }
 
 .tree_text {
-    width: 868px;
+    width: 100%;
     height: 46px;
     color: #303030;
     font-family: Lato;
@@ -367,7 +363,7 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 45px;
-    width: 871px;
+    width: 100%;
     height: 99px;
     border-radius: 20px;
     border: 1px solid #dddddd;
@@ -397,9 +393,9 @@
 .faq {
     margin: 0 auto;
     text-align: center;
-    width: 1920px;
-    padding-top: 80px;
+    width: 100%;
     background: url('../src/images/Layer_3.png');
+    padding: 80px 50px 0 50px;
 }
 
 .text_faq {
@@ -426,12 +422,12 @@
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    width: 1180px;
+    width: 100%;
     margin-top: 35px;
 }
 
 .text_faq_left {
-    width: 600px;
+    width: 100%;
     height: 245px;
     color: #ffffff;
     font-family: Lato;
@@ -442,7 +438,7 @@
 }
 
 .text_faq_rigth {
-    width: 570px;
+    width: 100%;
 }
 
 .faq_icon {
@@ -454,21 +450,18 @@
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
-    width: 570px
+    width: 100%;
 }
-
-
 
 .contacts {
     display: flex;
     margin: 0 auto;
     justify-content: flex-end;
-    width: 1920px;
+    width: 100%;
     margin-top: 75px;
 }
 
 .message .text1 {
-    width: 161px;
     height: 24px;
     color: #333333;
     font-family: Lato;
@@ -477,7 +470,6 @@
 }
 
 .message .text2 {
-    width: 133px;
     height: 13px;
     color: #666666;
     font-family: Georgia;
@@ -486,7 +478,6 @@
 }
 
 .message .text3 {
-    width: 506px;
     height: 17px;
     color: #666666;
     font-family: Lato;
@@ -497,11 +488,9 @@
 .email {
     display: flex;
     justify-content: space-between;
-    width: 400px;
 }
 
 .email .text4 {
-    width: 106px;
     height: 110px;
     color: #666666;
     font-family: Lato;
@@ -515,7 +504,6 @@
 }
 
 .message .text5 {
-    width: 83px;
     height: 15px;
     color: #666666;
     font-family: Lato;
@@ -527,20 +515,16 @@
     display: flex;
     justify-content: space-between;
     margin-top: 17px;
-    width: 570px;
 }
 
 .name .form-control {
-    width: 250px;
 }
 
 .other .form-control {
-    width: 570px;
     margin-top: 15px;
 }
 
 .form-group1 .form-control {
-    width: 570px;
     height: 113px;
     margin-bottom: 42px;
     margin-top: 30px;
@@ -548,7 +532,6 @@
 
 .map {
     background: url('../src/images/map.png');
-    width: 570px;
     height: 692px;
     background-repeat: no-repeat;
     margin-top: 50px;
@@ -566,17 +549,14 @@
 
 .footer {
     margin: 0 auto;
-    width: 1920px;
+    width: 100%;
     background: url("../src/images/footer (1).png");
     height: 580px;
 }
 
 .footer_text {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
     padding-top: 200px;
-    width: 1171px;
+    width: 100%;
 }
 
 .footer_text1 {
@@ -595,6 +575,7 @@
     font-size: 14px;
     font-weight: 400;
     margin-top: 30px;
+    margin-right: 20px;
 }
 
 .footer_text3 {
@@ -630,11 +611,12 @@
 .footer2 {
     display: flex;
     justify-content: space-between;
+    padding-left: 240px;
+    padding-right: 20px;
 }
 
-.go {
-    margin-left: 380px;
-    margin-top: 200px;
+#go_to_top {
+    align-self: flex-end;
 }
 
 .footer1 {
