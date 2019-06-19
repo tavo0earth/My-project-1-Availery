@@ -1,11 +1,8 @@
-$(document).ready(function(){
-    $("#scrollto").on("click", function(e){
-        var anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
+$(document).ready(function scrollToTop(e) {
+    $("#scrollto").on("click", scrollToTop);
+        $('html').stop().animate({
+            scrollTop: 0
         }, 777);
         e.preventDefault();
         return false;
     });
-});
-
