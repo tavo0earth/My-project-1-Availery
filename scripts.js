@@ -6,16 +6,19 @@ $(document).ready(function scrollToTop(e) {
         e.preventDefault();
     });
 
-(function() {
-    var d = document,
-        inp = d.getElementsByClassName('form-control'),
-        mas = [];
+function Complete() {
+    var data = [
+        document.data.First_Name.value,
+        document.data.Last_Name.value,
+        document.data.Email.value,
+        document.data.Subject.value,
+        document.data.Message.value
+    ];
+    console.log(data);
+};
 
-    function save() {
-        for (var i = 0; i < inp.length; i++) {
-            mas[i] = inp[i].value;
-        }
-        console.log(mas);
-    }
-    save();
-})();
+$.ajax({
+    type:"POST",
+    data: {'name':First_Name,'name':Last_Name,'name':Email,'name':Subject,'name':Message},
+    url:"index.php",
+});
