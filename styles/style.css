@@ -545,15 +545,6 @@
 }
 
 .contacts .message {
-    width: 40%
-}
-
-.map {
-    background: url('../src/images/map.png');
-    height: 692px;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 32px;
     width: 40%;
 }
 

@@ -288,37 +288,29 @@
             </div>
             <div class="text_faq_rigth">
                 <div class="faq_icon">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="onetextbutton"
+                    <button class="btn btn-primary dropdown-toggle onetextbutton" type="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </button>
                 </div>
                 <div class="faq_icon">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="twotextbutton"
+                    <button class="btn btn-primary dropdown-toggle onetextbutton" type="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1</a>
-                        <a class="dropdown-item" href="#">2</a>
-                    </div>
                 </div>
                 <div class="faq_icon">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="treetextbutton"
+                    <button class="btn btn-primary dropdown-toggle onetextbutton" type="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1</a>
-                        <a class="dropdown-item" href="#">2</a>
-                    </div>
                 </div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                Praesent in purus tortor. Integer id auque ultricies, porta dolor quis, accumsan est.
-                Pellentesque facilisis vehicula consequat. Nam magna justo, suscript id libero ac, vulputate
-                convallis nisi. Sed sagittis, nisi in pharetra bibendum, orci augue sollicitudin mauris, eu
-                commodo magna risus a lorem. Sed dui ex, malesuada et velit et, rhoncus maximus est. Mauris
-                tempus sagittis massa nec consectetur.
+                <div class="faq_icon">
+                    <button class="btn btn-primary dropdown-toggle onetextbutton" type="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -372,8 +364,32 @@
             </div>
         </div>
     </div>
-    <div class="map">й
-    </div>
+    <div style="width: 624px;height: 509px;margin-left: 30px" id="mapfmlqitky"></div>
+    <script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=GoogleReadyHandlerfmlqitky"
+            async defer></script>
+    <script>
+        function GoogleReadyHandlerfmlqitky() {
+        var infoWindow, map = new google.maps.Map(document.getElementById("mapfmlqitky"), {
+            center: {lat: -33.85256937641225, lng: 151.28508518527838},
+            zoom: 11,
+            disableDefaultUI: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            mapTypeId: "roadmap"
+        });
+        infoWindow = new google.maps.InfoWindow();
+        (new google.maps.Marker({
+            position: {lat: -33.86083747134732, lng: 151.20981167148443},
+            map: map,
+            title: decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B01")
+        }))
+            .addListener('click', function (e) {
+                infoWindow.setContent(decodeURIComponent("%D0%A2%D0%BE%D1%87%D0%BA%D0%B0"));
+                infoWindow.open(map, this);
+            });
+        return map;
+    }
+    </script>
     <div class="chat">
     </div>
 </div>

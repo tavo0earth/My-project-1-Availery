@@ -68,3 +68,26 @@ var sendContacts = function () {
 };
 
 $("#scrollto").on("click", scrollToTop);
+
+//Разворачивание ячейки
+var cell = document.querySelectorAll('.faq_icon');
+
+$('.onetextbutton').click(function() {
+    cellText();
+});
+
+//1 -Функция добавления классов разворачивания
+var cellText = function () {
+    var text = document.createElement('div');
+    text.className = 'dropdown-menu';
+    text.innerHTML = textInCell;
+    for (var i = 0; i < cell.length; i++) {
+        cell[i].appendChild(text);
+    };
+};
+
+var textInCell = 'Praesent in purus tortor. Integer id auque ultricies, porta dolor quis, accumsan est.\n' +
+    'Pellentesque facilisis vehicula consequat. Nam magna justo, suscript id libero ac, vulputate\n' +
+    'convallis nisi. Sed sagittis, nisi in pharetra bibendum, orci augue sollicitudin mauris, eu\n' +
+    'commodo magna risus a lorem. Sed dui ex, malesuada et velit et, rhoncus maximus est. Mauris\n' +
+    'tempus sagittis massa nec consectetur.';
