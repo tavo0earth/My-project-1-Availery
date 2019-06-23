@@ -527,12 +527,11 @@
 
 .table .name {
     display: flex;
-    justify-content: space-between;
     margin-top: 17px;
 }
 
-.name .form-control {
-    width: 45%;
+.name .xxx {
+    width: 100%;
 }
 
 .other .form-control {

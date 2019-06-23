@@ -31,7 +31,39 @@ function sendContacts() {
 
 var contacts = document.querySelector('.table');
 var button = contacts.querySelector('#send');
+var fields = contacts.querySelectorAll('.form-control');
+var xxx = contacts.querySelectorAll('.xxx');
+
 button.addEventListener('click', function (evt) {
     evt.preventDefault();
     sendContacts();
+
+    oneError();
+
+    checkVoids();
 });
+
+var checkError = function (text) {
+    var error = document.createElement('div');
+    error.className = 'error';
+    error.style.color = 'red';
+    error.innerHTML = text;
+    return error;
+};
+
+var checkVoids = function () {
+    for (var i = 0; i < fields.length; i++) {
+        if (!fields[i].value) {
+            console.log('поле не заполнено', fields[i]);
+            var error = checkError ('Cannot be blank');
+            xxx[i].insertBefore(error, fields[i]);
+        };
+    };
+};
+
+var oneError = function () {
+    var errors = contacts.querySelectorAll('.error');
+    for (var i = 0; i < errors.length; i++) {
+        errors[i].remove()
+    };
+};
