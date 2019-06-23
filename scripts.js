@@ -1,24 +1,37 @@
 $(document).ready(function scrollToTop(e) {
     $("#scrollto").on("click", scrollToTop);
+    e.preventDefault();
         $('html').stop().animate({
             scrollTop: 0
         }, 777);
-        e.preventDefault();
     });
 
-function Complete() {
-    var data = [
-        document.data.First_Name.value,
-        document.data.Last_Name.value,
-        document.data.Email.value,
-        document.data.Subject.value,
-        document.data.Message.value
-    ];
+function sendContacts() {
+    var firstName = $('[name="firstName"]').val();
+    var lastName = $('[name="lastName"]').val();
+    var email = $('[name="email"]').val();
+    var subject = $('[name="subject"]').val();
+    var message = $('[name="message"]').val();
+
+    var data = {firstName, lastName, email, subject, message};
     console.log(data);
+
+    $.ajax({
+        type: "POST",
+        data: {
+            'First Name': data['firstName'],
+            'Last Name': data['lastName'],
+            'Email': data['email'],
+            'Subject': data['subject'],
+            'Message': data['message']
+        },
+        url: "index.php"
+    });
 };
 
-$.ajax({
-    type:"POST",
-    data: {'name':First_Name,'name':Last_Name,'name':Email,'name':Subject,'name':Message},
-    url:"index.php",
+var contacts = document.querySelector('.table');
+var button = contacts.querySelector('#send');
+button.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    sendContacts();
 });
