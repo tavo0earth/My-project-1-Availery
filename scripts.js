@@ -6,47 +6,47 @@ function scrollToTop(e) {
         }, 777);
     };
 
-$("#scrollto").on("click", scrollToTop);
 
-//Валидация + отправка данных
-//1 - Обработчик кнопки
-$('#send').click(function(evt) {
-    evt.preventDefault();
-
-    sendContacts();
-
-    checkVoids();
-});
 
 //2 - Проверка пустоты ячеек и применение к ним error
-var checkVoids = function () {
-var fieldsCell = $('.form-control').val();
-
-    $(".error").remove();
-
-    if (!fieldsCell.value) {
-        $("<div class='error'>Cannot be blank</div>")
-            .css("color", "red")
-            .prependTo(".fields");
-    };
+// Функция принимает селектор, проверяет есть ли в нем value, и в случае отсутствия добавляет блок с ошибкой
+// Результат функции: true - поле валидно, false - нет
+var validateField = function (field) {
+    // Удаление предидущей ошибки, в случае если она была
+    field.parent().find('.error').remove();
+    var value = field.val();
+    if (!value) {
+        field.parent().prepend("<div class='error'>Cannot be blank</div>");
+        return false;
+    } else {
+        return true;
+    }
 };
 
-//3 - Сбор данных и отправка на сервер
-var sendContacts = function () {
-    var firstName = $('[name="firstName"]').val();
-    var lastName = $('[name="lastName"]').val();
-    var email = $('[name="email"]').val();
-    var subject = $('[name="subject"]').val();
-    var message = $('[name="message"]').val();
-
-    var data = {firstName, lastName, email, subject, message};
-    console.log(data);
-
-    $.ajax({
-        type: "POST",
-        data: {},
-        url: "index.php"
+//3 - Сбор данных, валидация и отправка на сервер
+var sendContacts = function (evt) {
+    evt.preventDefault();
+    var data = {};
+    // Описываем перечень полей
+    var fieldNames = ["firstName", "lastName", "email", "subject", "message"];
+    // Итерируем по названиям полей и запускаем на каждом из них валидацию
+    fieldNames.forEach((fieldName) => {
+        var field = $(`[name=${fieldName}]`);
+        var isValid = validateField(field);
+        // Если поле валидно пишем его в обьект data
+        if (isValid) {
+            data[fieldName] = field.val();
+        }
     });
+
+     // Проверяем если ключей в обьекте data 5, т.е. есть все поля, отправляем запрос
+    if (Object.keys(data).length === 5) {
+        $.ajax({
+            type: "POST",
+            data,
+            url: "index.php"
+        });
+    }
 };
 
 //Разворачивание ячейки
@@ -61,3 +61,8 @@ $('.onetextbutton').click(function() {
         "</div>"
         ).appendTo(".faq_icon");
 });
+
+
+// Обработчики событий
+$("#scrollto").on("click", scrollToTop);
+$('#send').on('click', sendContacts);
