@@ -453,7 +453,19 @@
     margin-bottom: 15px;
 }
 
-#onetextbutton, #twotextbutton, #treetextbutton {
+.expandable_cell {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    width: 100%;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#onetextbutton, #twotextbutton, #treetextbutton, #fourtextbutton {
     color: #ffffff;
     font-family: Lato;
     font-size: 16px;

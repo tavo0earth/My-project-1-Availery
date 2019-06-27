@@ -51,16 +51,7 @@ var sendContacts = function (evt) {
 
 //Разворачивание ячейки
 
-$('.onetextbutton').click(function() {
-    $("<div class='dropdown-menu'>" +
-        "'Praesent in purus tortor. Integer id auque ultricies, porta dolor quis, accumsan est.\\n' +\n" +
-        "    'Pellentesque facilisis vehicula consequat. Nam magna justo, suscript id libero ac, vulputate\\n' +\n" +
-        "    'convallis nisi. Sed sagittis, nisi in pharetra bibendum, orci augue sollicitudin mauris, eu\\n' +\n" +
-        "    'commodo magna risus a lorem. Sed dui ex, malesuada et velit et, rhoncus maximus est. Mauris\\n' +\n" +
-        "    'tempus sagittis massa nec consectetur.';" +
-        "</div>"
-        ).appendTo(".faq_icon");
-});
+
 
 
 // Обработчики событий
