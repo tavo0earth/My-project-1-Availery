@@ -1,68 +1,45 @@
-//Скролл кнопки
-function scrollToTop(e) {
-    e.preventDefault();
-        $('html').stop().animate({
-            scrollTop: 0
-        }, 777);
-    };
-
-
-
-//2 - Проверка пустоты ячеек и применение к ним error
-// Функция принимает селектор, проверяет есть ли в нем value, и в случае отсутствия добавляет блок с ошибкой
-// Результат функции: true - поле валидно, false - нет
-var validateField = function (field) {
-    // Удаление предидущей ошибки, в случае если она была
-    field.parent().find('.error').remove();
-    var value = field.val();
-    if (!value) {
-        field.parent().prepend("<div class='error'>Cannot be blank</div>");
-        return false;
-    } else {
-        return true;
-    }
-};
-
-//3 - Сбор данных, валидация и отправка на сервер
 var sendContacts = function (evt) {
+    //функция клика
     evt.preventDefault();
+    //отмена стандартного действия
     var data = {};
-    // Описываем перечень полей
+    //задали объект
     var fieldNames = ["firstName", "lastName", "email", "subject", "message"];
-    // Итерируем по названиям полей и запускаем на каждом из них валидацию
+    //задали название полей
+
+    //допустим берем 1-е поле и оно заполненное
     fieldNames.forEach((fieldName) => {
+        //на fieldNames открываем цикл перебирания массивов
+        //fieldName ты указал как название очередного массива или название фукнции?
         var field = $(`[name=${fieldName}]`);
+        //здесь присвоили field значение элемента имеющего в name название 1-го поля, так?
+        //а почему скобки вокруг fieldName {} а не []???
         var isValid = validateField(field);
-        // Если поле валидно пишем его в обьект data
+        //здесь переменной присваивается результат функции, а так же передается в нее значение field
         if (isValid) {
-            data[fieldName] = field.val();
+            //здесь проверяется полученное значение true ли?
         }
-    });
-
-     // Проверяем если ключей в обьекте data 5, т.е. есть все поля, отправляем запрос
-    if (Object.keys(data).length === 5) {
-        $.ajax({
-            type: "POST",
-            data,
-            url: "index.php"
-        });
+        data[fieldName] = field.val();
+        //если да, то пишем в data текст .val() в field
+        //почему скобки массивные, а не объектные? data ж должна быть передана в объекте?
     }
-};
-
-//Разворачивание ячейки
-
-$('.onetextbutton').click(function() {
-    $("<div class='dropdown-menu'>" +
-        "'Praesent in purus tortor. Integer id auque ultricies, porta dolor quis, accumsan est.\\n' +\n" +
-        "    'Pellentesque facilisis vehicula consequat. Nam magna justo, suscript id libero ac, vulputate\\n' +\n" +
-        "    'convallis nisi. Sed sagittis, nisi in pharetra bibendum, orci augue sollicitudin mauris, eu\\n' +\n" +
-        "    'commodo magna risus a lorem. Sed dui ex, malesuada et velit et, rhoncus maximus est. Mauris\\n' +\n" +
-        "    'tempus sagittis massa nec consectetur.';" +
-        "</div>"
-        ).appendTo(".faq_icon");
 });
 
-
-// Обработчики событий
-$("#scrollto").on("click", scrollToTop);
-$('#send').on('click', sendContacts);
+var validateField = function (field) {
+    //тут мы полуяили значение field
+    field.parent().find('.error').remove();
+    //тут мы в родителе field выводим error и удаляем, так?
+    var value = field.val();
+    //присваиваем переменной текст поля
+    if (!value) {
+        //проверка на наличие текста
+        field.parent().prepend("<div class='error'>Cannot be blank</div>");
+        //если нет текста, то в родитель field над ним добавляется это вложение
+        //и тут вопрос, почему в prepend то вложение без &()???
+        return false;
+        //вывод false, что в итоге не добавит поле в data
+    } else {
+        return true;
+        //вывод true, что в итоге добавит поле в data
+    }
+};
