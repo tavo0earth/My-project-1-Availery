@@ -51,9 +51,40 @@ var sendContacts = function (evt) {
 
 //Разворачивание ячейки
 
-
+var expandableCellOne = function () {
+    if (document.querySelector('.expandable_cell_one').style.display === "none") {
+        document.querySelector('.expandable_cell_one').style.display = "block";
+    } else {
+        document.querySelector('.expandable_cell_one').style.display = "none";
+    };
+};
+var expandableCellTwo = function () {
+    if (document.querySelector('.expandable_cell_two').style.display === "none") {
+        document.querySelector('.expandable_cell_two').style.display = "block";
+    } else {
+        document.querySelector('.expandable_cell_two').style.display = "none";
+    };
+};
+var expandableCellTree = function () {
+    if (document.querySelector('.expandable_cell_tree').style.display === "none") {
+        document.querySelector('.expandable_cell_tree').style.display = "block";
+    } else {
+        document.querySelector('.expandable_cell_tree').style.display = "none";
+    };
+};
+var expandableCellFour = function () {
+    if (document.querySelector('.expandable_cell_four').style.display === "none") {
+        document.querySelector('.expandable_cell_four').style.display = "block";
+    } else {
+        document.querySelector('.expandable_cell_four').style.display = "none";
+    };
+};
 
 
 // Обработчики событий
 $("#scrollto").on("click", scrollToTop);
 $('#send').on('click', sendContacts);
+$('#onetextbutton').on('click', expandableCellOne);
+$('#twotextbutton').on('click', expandableCellTwo);
+$('#treetextbutton').on('click', expandableCellTree);
+$('#fourtextbutton').on('click', expandableCellFour);
