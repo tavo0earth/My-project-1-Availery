@@ -53,15 +53,14 @@ var sendContacts = function (evt) {
 
 
     var cells = document.querySelectorAll('.clickFaq');
-
+var cellsDiv = document.querySelectorAll('.faq_icon');
 for (var i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click', foo, false);
-
     function foo() {
-        if (document.querySelector('.expandable_cell').style.display === "none") {
-            document.querySelector('.expandable_cell').style.display = "block";
+        if (cellsDiv[i].querySelector('.expandable_cell').style.display === "none") {
+            cellsDiv[i].querySelector('.expandable_cell').style.display = "block";
         } else {
-            document.querySelector('.expandable_cell').style.display = "none";
+            cellsDiv[i].querySelector('.expandable_cell').style.display = "none";
         }
     }
 }
