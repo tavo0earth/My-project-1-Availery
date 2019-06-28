@@ -453,7 +453,7 @@
     margin-bottom: 15px;
 }
 
-.expandable_cell_one, .expandable_cell_two, .expandable_cell_tree, .expandable_cell_four {
+.expandable_cell {
     display: none;
     margin: 0 auto;
     text-align: center;
