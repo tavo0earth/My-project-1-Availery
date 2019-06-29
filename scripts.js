@@ -52,12 +52,25 @@ var sendContacts = function (evt) {
 //Разворачивание ячейки
 function onFaqClick(event) {
     var element = event.target;
-    element = $(this).parent().find('.expandable_cell');
+    element = $(element).parent().find('.expandable_cell');
     if (element.css('display') === "none") {
         element.show();
     } else {
         element.hide();
     }
+}
+
+google.maps.event.addDomListener(window, 'load', init);
+function init() {
+
+    var myOptions = {
+        center: new google.maps.LatLng(-33.8929649, 150.9710716), // Координаты, какое место отображать на карте
+        zoom: 9, // Уровень риближения карты
+        mapTypeId: google.maps.MapTypeId.ROADMAP // Тип карты
+
+    };
+    var map = new google.maps.Map(document.getElementById("map"), // В каком блоке будет отображаться карта
+        myOptions);
 }
 
 // Обработчики событий

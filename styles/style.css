@@ -561,8 +561,9 @@
 }
 
 #map {
-    padding: 80px 40px 0px 50px;
-
+    height: 70vh;
+    width: 40%;
+    margin: 50px 40px 0px 40px;
 }
 
 .chat {
