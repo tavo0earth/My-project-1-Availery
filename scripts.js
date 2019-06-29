@@ -50,21 +50,17 @@ var sendContacts = function (evt) {
 };
 
 //Разворачивание ячейки
-
-
-    var cells = document.querySelectorAll('.clickFaq');
-var cellsDiv = document.querySelectorAll('.faq_icon');
-for (var i = 0; i < cells.length; i++) {
-    cells[i].addEventListener('click', foo, false);
-    function foo() {
-        if (cellsDiv[i].querySelector('.expandable_cell').style.display === "none") {
-            cellsDiv[i].querySelector('.expandable_cell').style.display = "block";
-        } else {
-            cellsDiv[i].querySelector('.expandable_cell').style.display = "none";
-        }
+function onFaqClick(event) {
+    var element = event.target;
+    element = $(this).parent().find('.expandable_cell');
+    if (element.css('display') === "none") {
+        element.show();
+    } else {
+        element.hide();
     }
 }
 
 // Обработчики событий
 $("#scrollto").on("click", scrollToTop);
 $('#send').on('click', sendContacts);
+$('.clickFaq').on('click', onFaqClick);
