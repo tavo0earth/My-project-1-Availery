@@ -560,6 +560,11 @@
     width: 40%;
 }
 
+#map {
+    padding: 80px 40px 0px 50px;
+
+}
+
 .chat {
     background: url('../src/images/chat.png') no-repeat;
     width: 311px;
