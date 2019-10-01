@@ -453,7 +453,19 @@
     margin-bottom: 15px;
 }
 
-#onetextbutton, #twotextbutton, #treetextbutton {
+.expandable_cell {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    width: 100%;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#onetextbutton, #twotextbutton, #treetextbutton, #fourtextbutton {
     color: #ffffff;
     font-family: Lato;
     font-size: 16px;
@@ -527,12 +539,11 @@
 
 .table .name {
     display: flex;
-    justify-content: space-between;
     margin-top: 17px;
 }
 
-.name .form-control {
-    width: 45%;
+.name .fields {
+    width: 100%;
 }
 
 .other .form-control {
@@ -546,16 +557,13 @@
 }
 
 .contacts .message {
-    width: 40%
+    width: 40%;
 }
 
-.map {
-    background: url('../src/images/map.png');
-    height: 692px;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-left: 32px;
+#map {
+    height: 70vh;
     width: 40%;
+    margin: 50px 40px 0px 40px;
 }
 
 .chat {
@@ -636,7 +644,7 @@
     padding-right: 50px;
 }
 
-#go_to_top {
+#scrollto {
     align-self: flex-end;
     margin-left: 250px;
 }
@@ -649,3 +657,8 @@
     margin-top: 50px;
     text-align: center;
 }
+
+.error {
+    color: red;
+}
+
